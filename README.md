@@ -4,19 +4,11 @@
 
 Nordic AI Cup 2026 team submission by [Mahdi Nasser](https://github.com/mahdinass) and [Robel (@rabrie10)](https://github.com/rabrie10). [Original team repository](https://github.com/rabrie10/Gforce-ai-cup-2026/tree/main/drone-flyby) · [Challenge brief](https://github.com/amboltio/Nordic-AI-Cup-2026/tree/main/drone-flyby)
 
-> Private portfolio review. This GitHub repository contains the case study and release notes. The source, competition imagery, and model files are held pending the rights review.
+> This portfolio case study documents the team submission. See the original team repository for source provenance and the reproduction notes for model and data requirements.
 
 ## From pixels to the next view
 
-```mermaid
-flowchart TD
-    View[Camera observation] --> Detect[YOLO11s proposals]
-    Detect --> Recognize[DINOv2 recognition and background rejection]
-    Recognize --> Track[Global-coordinate tracking]
-    Track --> Predict[Whole-frame detections]
-    Track --> Camera[Next-view policy]
-    Camera --> View
-```
+![Drone Flyby flowchart. Camera observation feeds YOLO11s proposals, DINOv2 recognition and background rejection, then global tracking. Tracking produces full-frame detections and guides the next camera view.](docs/architecture.svg)
 
 | Stage | Submitted design |
 | --- | --- |

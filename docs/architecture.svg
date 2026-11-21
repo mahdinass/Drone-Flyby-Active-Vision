@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476 355" width="476" height="355" role="img" aria-labelledby="title desc">
+  <title id="title">Drone Flyby perception and camera feedback</title>
+  <desc id="desc">Camera observation feeds YOLO11s proposals, DINOv2 recognition and background rejection, then global tracking. Tracks produce full-frame detections and guide the next camera view, which feeds the next observation.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L8 4L0 8Z" fill="#51647a"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="474" height="353" rx="18" fill="#f6f8fa" stroke="#d0d7de"/>
+  <g fill="none" stroke="#51647a" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)">
+    <path d="M216 57V77"/>
+    <path d="M216 118V138"/>
+    <path d="M216 195V215"/>
+    <path d="M216 256V270H117V286"/>
+    <path d="M216 256V270H322V286"/>
+    <path d="M414 308H447V38H336"/>
+  </g>
+  <g stroke="#a9bbcf" fill="#ffffff">
+    <rect x="98" y="18" width="236" height="39" rx="9"/>
+    <rect x="98" y="79" width="236" height="39" rx="9"/>
+    <rect x="98" y="140" width="236" height="55" rx="9"/>
+    <rect x="98" y="217" width="236" height="39" rx="9"/>
+    <rect x="25" y="288" width="184" height="40" rx="9"/>
+  </g>
+  <rect x="230" y="288" width="184" height="40" rx="9" fill="#eaf3ff" stroke="#8baee2"/>
+  <g fill="#172b40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600">
+    <text x="216" y="43">Camera observation</text>
+    <text x="216" y="104">YOLO11s proposals</text>
+    <text x="216" y="162">DINOv2 recognition</text>
+    <text x="216" y="242">Global tracking</text>
+    <text x="117" y="313">Full-frame detections</text>
+    <text x="322" y="313">Next camera view</text>
+  </g>
+  <text x="216" y="181" fill="#455a70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14">Background rejection</text>
+</svg>
